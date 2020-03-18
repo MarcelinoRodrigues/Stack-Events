@@ -1,0 +1,129 @@
+*{margin: 0; padding: 0;}
+body{
+    background-color: #e3e3e3;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 2px solid #a8a8a8;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 1.5em;
+    display: inline-block;
+}
+nav ul li:hover{
+    background-color: #a8a8a8;
+}
+nav ul li a{
+    text-decoration: none;
+    font-style: italic;
+    padding: .6em 1em;
+    font-size: 20px;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: black;
+}
+.container{
+    background-color: white;
+    display: inline-block;
+    margin: 3em;
+    margin-left: 100px;
+    height: 400px;
+    width: 350px;
+    border: 1px solid #a8a8a8;
+    border-radius: 5px;
+}
+.container h2{
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+.container div{
+    margin: 0 auto;
+    width: 450px;
+}
+.container div img{
+    height: 100px;
+    width: 100px;
+    margin: 0.4em;
+    border: solid 1px black;
+    margin-top: 50px;
+}
+form{
+    width: 400px;
+    margin-left: 600px;
+    margin-top: -350px;
+    display: inline-block;
+}
+form input{
+    border-radius: 50px;
+    border: 1px solid #a8a8a8;
+    padding: .9375rem 1.875rem;
+}
+form input[type = Email]{
+    width: 250px;
+}
+form input[type = submit]:hover{
+    cursor: pointer;
+    background-color: #a8a8a8;
+}
+article{
+    background-color: #ffffff;
+    height: 308px;
+    margin-top: -290px;
+    margin-left: 500px;
+    margin-bottom: 20px;
+    width: 600px;
+    border: 1px solid #a8a8a8;
+    border-radius: 5px;
+    padding: 0.7em;
+    font-size:17px;
+}
+footer{
+    background-color: #a8a8a8;
+    text-align: center;
+    display: block;
+    min-height: 100px;
+    width: 100%;
+}
+footer p{
+    font-style: italic;
+    font-size: 20px;
+}
+footer img{
+    height: 46px;
+    margin: 1em;
+}
+footer img:hover{
+    background-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*config*/
+.my-event{
+    background-color: #ffffff;
+    height: 368px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    border: 1px solid #a8a8a8;
+    border-radius: 5px;
+    padding: 0.7em;
+    font-size: 17px;
+    width: 1100px;
+}
+.my-event .container-button input{
+    padding: 1em;
+    border-radius: 50px;
+    border: 1px solid #a8a8a8;
+    padding: .9375rem 1.875rem;
+}
+.my-event .event{
+    background-color: #a8a8a8;
+}
+.my-event span{
+    font-style: italic;
+    font-size: 20px;
+}
