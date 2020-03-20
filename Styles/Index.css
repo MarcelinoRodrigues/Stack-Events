@@ -43,7 +43,6 @@ nav ul li a{
 }
 .container .events{
     margin: 0 auto;
-    width: 300px;
     text-align: center;
     overflow: auto;
     height: 400px;
@@ -116,6 +115,10 @@ footer img:hover{
     font-size: 17px;
     width: 1100px;
 }
+.my-event span{
+    font-style: italic;
+    font-size: 20px;
+}
 .my-event .container-button{
     margin-bottom: 10px;
 }
@@ -125,14 +128,17 @@ footer img:hover{
     border: 1px solid #a8a8a8;
     padding: .9375rem 1.875rem;
 }
-.my-event .event{
+.my-event .box{
     background-color: #a8a8a8;
-    width: 600px;
+    width: 1075px;
     height: 250px;
-    padding: 1em;
+    padding: 0.7em;
     border-radius: 2px;
+    overflow: auto;
 }
-.my-event span{
-    font-style: italic;
-    font-size: 20px;
+.my-event .box td{
+    padding: 1em;
+}
+.my-event .box td img{
+    margin-left: 100px;
 }
