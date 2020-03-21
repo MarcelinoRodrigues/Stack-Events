@@ -2,6 +2,10 @@
 body{
     background-color: #e3e3e3;
 }
+nav{
+    position: fixed;
+    width: 100%;
+}
 nav ul{
     width: 100%;
     display: flex;
@@ -17,6 +21,12 @@ nav ul li{
 nav ul li:hover{
     background-color: #a8a8a8;
 }
+nav ul #event{
+    background-color: #CD5C5C;
+}
+nav ul #event:hover{
+    background-color: #a8a8a8;
+}
 nav ul li a{
     text-decoration: none;
     padding: .6em 1em;
@@ -30,10 +40,11 @@ nav ul li a{
     display: inline-block;
     margin: 3em;
     margin-left: 100px;
-    height: 413px;
+    height: 403px;
     width: 350px;
     border: 1px solid #a8a8a8;
     border-radius: 5px;
+    margin-top: 150px;
 }
 .container h2{
     text-align: center;
@@ -74,7 +85,7 @@ form input[type = submit]:hover{
 article{
     background-color: #ffffff;
     height: 382px;
-    margin-top: -395px;
+    margin-top: -400px;
     margin-left: 500px;
     margin-bottom: 20px;
     width: 600px;
