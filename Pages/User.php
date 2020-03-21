@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -13,11 +12,12 @@
             <li><a href="#my-footer">Contato</a></li>
         </ul>
     </nav>
-    <form>
+    <form action="User.php" method="POST" enctype="multipart/form-data">
         <h1>Cadastrar Evento</h1>
         <input type="text" placeholder="Nome Do Evento">
         <input type="date"/>
         <textarea placeholder="Descrição Do Evento"></textarea>
+        Arquivo:<input type="file" name="arquivo" required>
         <input type="submit" value="Criar"/>
     </form>
     <footer id="my-footer">
