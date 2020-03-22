@@ -8,7 +8,7 @@
 <body>
     <nav>
         <ul>
-            <li><a href="../index.html">Voltar</a></li>
+            <li><a href="../../index.html">Voltar</a></li>
             <li><a href="#my-footer">Contato</a></li>
         </ul>
     </nav>
