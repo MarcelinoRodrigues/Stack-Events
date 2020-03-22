@@ -93,6 +93,7 @@ article{
     border-radius: 5px;
     padding: 0.7em;
     font-size: 17px;
+    word-wrap: break-word;
 }
 footer{
     background-color: #a8a8a8;

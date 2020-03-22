@@ -1,5 +1,14 @@
 <?php
-    include("../../model/conexao.php");
+    include ('../../model/conexao.php');
+    
+    $nomeE     = $_POST['nomeE'];
+    $dataE     = $_POST['dataE'];
+    $descricao = $_POST['descricao'];
+
+    $sql = "INSERT INTO `usuario`(`nomeEvento`, `data`, `descricao`) 
+    VALUES ('$nomeE','$dataE','$descricao')";
+
+    $inserir = mysqli_query($conexao,$sql);
 
     $msg = false;
 
@@ -15,8 +24,8 @@
         //efetua o upload
         move_uploaded_file($_FILES['arquivo']['tmp_name'],$diretorio.$novo_nome);
 
-        $sql_code = "INSERT INTO arquivo (codigo,arquivo,data) VALUES(null,'$novo_nome', NOW())";
-        if($mysqli -> query($sql_code))
+        $sql_code = "INSERT INTO arquivo (id,nomeEvento,data,descricao,arquivo) VALUES(null,NOW(),'$novo_nome')";
+        if($mysqli ->query($sql_code))
             $msg = "Arquivo enviado com sucesso!";
         else
             $msg = "Falha ao enviar arquivo";
@@ -42,9 +51,9 @@
     </nav>
     <form action="User.php" method="POST" enctype="multipart/form-data">
         <h1>Cadastrar Evento</h1>
-        <input type="text" placeholder="Nome Do Evento">
-        <input type="date"/>
-        <textarea placeholder="Descrição Do Evento"></textarea>
+        <input type="text" name="nomeE" placeholder="Nome Do Evento">
+        <input type="date" name="dataE"/>
+        <textarea placeholder="Descrição Do Evento" name="descricao"></textarea>
         Arquivo:<input type="file" name="arquivo" required>
         <input type="submit" value="Criar"/>
     </form>
