@@ -1,31 +1,28 @@
 <?php
     include ('../../model/conexao.php');
-    
-    $nomeE     = $_POST['nomeE'];
-    $dataE     = $_POST['dataE'];
-    $descricao = $_POST['descricao'];
 
-    $sql = "INSERT INTO `usuario`(`nomeEvento`, `data`, `descricao`) 
-    VALUES ('$nomeE','$dataE','$descricao')";
-
-    $inserir = mysqli_query($conexao,$sql);
-
-    $msg = false;
+    $msg = "";
 
     //se houver arquivo
     if(isset($_FILES['arquivo'])){
+        $nomeE     = $_POST['nomeE'];
+        $dataE     = $_POST['dataE'];
+        $descricao = $_POST['descricao'];
+
         //pegando extensao do arquivo
         $extensao = strtolower(substr($_FILES['arquivo']['name'], -4));
         //define o nome do arquivo
-        $novo_nome = md5(time()).$extensao;
+        $arquivo_nome = md5(time()).$extensao;
         //define o diretorio destino do arquivo
         $diretorio = "../upload/";
 
         //efetua o upload
-        move_uploaded_file($_FILES['arquivo']['tmp_name'],$diretorio.$novo_nome);
+        move_uploaded_file($_FILES['arquivo']['tmp_name'],$diretorio.$arquivo_nome);
 
-        $sql_code = "INSERT INTO arquivo (id,nomeEvento,data,descricao,arquivo) VALUES(null,NOW(),'$novo_nome')";
-        if($mysqli ->query($sql_code))
+        $sql_code = "INSERT INTO evento (nomeEvento,data,descricao,arquivo) VALUES('".$nomeE."','".$dataE."','".$descricao."','".$arquivo_nome."')";
+        //$inserir = mysqli_query($conexao,$sql_code);
+
+        if(mysqli_query($conexao,$sql_code))
             $msg = "Arquivo enviado com sucesso!";
         else
             $msg = "Falha ao enviar arquivo";
