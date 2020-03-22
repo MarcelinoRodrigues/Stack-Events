@@ -1,3 +1,27 @@
+<?php
+    include("../../model/conexao.php");
+
+    $msg = false;
+
+    //se houver arquivo
+    if(isset($_FILES['arquivo'])){
+        //pegando extensao do arquivo
+        $extensao = strtolower(substr($_FILES['arquivo']['name'], -4));
+        //define o nome do arquivo
+        $novo_nome = md5(time()).$extensao;
+        //define o diretorio destino do arquivo
+        $diretorio = "../upload/";
+
+        //efetua o upload
+        move_uploaded_file($_FILES['arquivo']['tmp_name'],$diretorio.$novo_nome);
+
+        $sql_code = "INSERT INTO arquivo (codigo,arquivo,data) VALUES(null,'$novo_nome', NOW())";
+        if($mysqli -> query($sql_code))
+            $msg = "Arquivo enviado com sucesso!";
+        else
+            $msg = "Falha ao enviar arquivo";
+    }
+?>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +30,10 @@
     <title>Document</title>
 </head>
 <body>
+    <?php
+        if ($msg != false)
+            echo "<p> $msg <p>";
+    ?>
     <nav>
         <ul>
             <li><a href="../../index.html">Voltar</a></li>
