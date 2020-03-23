@@ -20,7 +20,6 @@
         move_uploaded_file($_FILES['arquivo']['tmp_name'],$diretorio.$arquivo_nome);
 
         $sql_code = "INSERT INTO evento (nomeEvento,data,descricao,arquivo) VALUES('".$nomeE."','".$dataE."','".$descricao."','".$arquivo_nome."')";
-        //$inserir = mysqli_query($conexao,$sql_code);
 
         if(mysqli_query($conexao,$sql_code))
             $msg = "Arquivo enviado com sucesso!";
@@ -42,15 +41,15 @@
     ?>
     <nav>
         <ul>
-            <li><a href="../../index.html">Voltar</a></li>
+            <li><a href="../../index.php">Voltar</a></li>
             <li><a href="#my-footer">Contato</a></li>
         </ul>
     </nav>
     <form action="User.php" method="POST" enctype="multipart/form-data">
         <h1>Cadastrar Evento</h1>
-        <input type="text" name="nomeE" placeholder="Nome Do Evento">
-        <input type="date" name="dataE"/>
-        <textarea placeholder="Descrição Do Evento" name="descricao"></textarea>
+        <input type="text" name="nomeE" placeholder="Nome Do Evento" autocomplete="off" required>
+        <input type="date" name="dataE" required>
+        <textarea placeholder="Descrição Do Evento" name="descricao" autocomplete="off"></textarea>
         Arquivo:<input type="file" name="arquivo" required>
         <input type="submit" value="Criar"/>
     </form>

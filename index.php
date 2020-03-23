@@ -1,3 +1,11 @@
+<?php
+    include ('model/conexao.php');
+
+    $sql ="SELECT data,nomeEvento,arquivo
+        from evento";
+
+    $prod = mysqli_query($conexao,$sql);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -47,28 +55,30 @@
                 <input type="submit" value="Todos os Eventos"/>
             </div>
             <div class="box">
-                <table>
+                <table> 
+                    <?php while($dado = $prod->fetch_array()){?> 
                     <tr>
-                        <td>19 MAR</td>
-                        <td>5º CBEE - Fortaleza (CE) 2020</td>
+                        <td><?php echo $dado['data'];?></td>
+                        <td><?php echo $dado['nomeEvento'];?></td>
                         <td>
-                            <img src="public/Assets/img/event2.jpg">
+                            <img><?php echo $dado['arquivo'];?></img>
                         </td>
                     </tr>
                     <tr>
-                        <td>20 MAR</td>
-                        <td>6º CBE - Aracaju (CE) 2020</td>
+                        <td><?php echo $dado['data'];?></td>
+                        <td><?php echo $dado['nomeEvento'];?></td>
                         <td>
-                            <img src="public/Assets/img/event1.jpg">
+                            <img><?php echo $dado['arquivo'];?></img>
                         </td>
                     </tr>
                     <tr>
-                        <td>20 MAR</td>
-                        <td>6º Natiruts - Aracaju (CE) 2020</td>
+                        <td><?php echo $dado['data'];?></td>
+                        <td><?php echo $dado['nomeEvento'];?></td>
                         <td>
-                            <img src="public/Assets/img/event3.jpg">
+                            <img><?php echo $dado['arquivo'];?></img>
                         </td>
                     </tr>
+                    <?php }?>
                 </table>
             </div>
         </div>
