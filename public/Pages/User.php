@@ -14,7 +14,7 @@
         //define o nome do arquivo
         $arquivo_nome = md5(time()).$extensao;
         //define o diretorio destino do arquivo
-        $diretorio = "../upload/";
+        $diretorio = "../Assets/upload/";
 
         //efetua o upload
         move_uploaded_file($_FILES['arquivo']['tmp_name'],$diretorio.$arquivo_nome);
@@ -31,8 +31,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Assets/logo/event.png"/>
     <link rel="stylesheet" type="text/css" href="../Styles/User.css"/>
-    <title>Document</title>
+    <title>Creat</title>
 </head>
 <body>
     <?php
