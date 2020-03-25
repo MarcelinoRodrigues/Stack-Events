@@ -30,7 +30,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="../Assets/logo/event.png"/>
     <link rel="stylesheet" type="text/css" href="../Styles/User.css"/>
     <title>ProjetoStack</title>

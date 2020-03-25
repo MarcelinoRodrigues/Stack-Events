@@ -9,7 +9,7 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width">
         <link rel='stylesheet' type='text/css' href='public/Styles/Index.css'>
         <link rel="shortcut icon" href="public/Assets/logo/event.png"/>
         <script type="text/javascript" src="public/js/index.js"></script>
