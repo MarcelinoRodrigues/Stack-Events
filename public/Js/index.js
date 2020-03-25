@@ -1,8 +1,8 @@
 //Pagina Inicial
 //Criador Marcelino Rodrigues
 
-//Pegar Data Atual
-function formataData(data = new Date()) {
+//IIFE DATA ATUAL
+(function(data = new Date()){
 	var dia = data.getDate();
 	var mes = data.getMonth()+1;
 	var ano = data.getFullYear();
@@ -10,10 +10,12 @@ function formataData(data = new Date()) {
 	if (dia.toString().length == 1) dia = '0'+dia;
 	if (mes.toString().length == 1) mes = '0'+mes;
 
-	return dia+'/'+mes+'/'+ano;
-}
+	console.log(dia);
 
-//Function button
+	return dia+'/'+mes+'/'+ano;	
+})();
+
+//Função clique do butão
 function clickButton(){
 	console.log("boraaa");
 }
