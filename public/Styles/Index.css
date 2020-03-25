@@ -159,4 +159,6 @@ footer img:hover{
 }
 #my-event .box td img{
     margin-left: 100px;
+    height: 100px;
+    width: 130px;
 }
