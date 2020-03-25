@@ -118,7 +118,7 @@ footer img:hover{
     border-radius: 10px;
     cursor: pointer;
 }
-.my-event{
+#my-event{
     background-color: #ffffff;
     height: 368px;
     margin-bottom: 20px;
@@ -129,24 +129,24 @@ footer img:hover{
     font-size: 17px;
     width: 1100px;
 }
-.my-event span{
+#my-event span{
     font-style: italic;
     font-size: 20px;
 }
-.my-event .container-button{
+#my-event .container-button{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.my-event .container-button input{
+#my-event .container-button input{
     border-radius: 50px;
     border: 1px solid #a8a8a8;
     padding: .9375rem 1.875rem;
 }
-.my-event .container-button input:hover{
+#my-event .container-button input:hover{
     cursor: pointer;
     background-color: #a8a8a8;
 }
-.my-event .box{
+#my-event .box{
     background-color: #a8a8a8;
     width: 1075px;
     height: 250px;
@@ -154,9 +154,9 @@ footer img:hover{
     border-radius: 2px;
     overflow: auto;
 }
-.my-event .box td{
+#my-event .box td{
     padding: 1em;
 }
-.my-event .box td img{
+#my-event .box td img{
     margin-left: 100px;
 }

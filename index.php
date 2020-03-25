@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="#Inicio">Inicio</a></li>
                 <li id="event"><a href="public/Pages/User.php">Criar Evento</a></li>
-                <li><a href="#my-footer">Contato</a></li>
+                <li><a href="#my-event">Eventos</a></li>
             </ul>
         </nav>
         <div class="container">
@@ -43,16 +43,16 @@
                 </p>
             </article>
         </div>
-        <div class="my-event">
+        <div id="my-event">
             <div>
                 <span>Eventos</span>
             </div>
             <hr />
             <div class="container-button">
-                <input type="submit" value="Hoje"/>
-                <input type="submit" value="Amanhã"/>
-                <input type="submit" value="Próxima semana"/>
-                <input type="submit" value="Todos os Eventos"/>
+                <input onclick="clickButton()" type="submit" value="Hoje" id=""/>
+                <input onclick="clickButton()" type="submit" value="Amanhã"/>
+                <input onclick="clickButton()" type="submit" value="Próxima semana"/>
+                <input onclick="clickButton()" type="submit" value="Todos os Eventos"/>
             </div>
             <div class="box">
                 <table> 
@@ -61,28 +61,14 @@
                         <td><?php echo $dado['data'];?></td>
                         <td><?php echo $dado['nomeEvento'];?></td>
                         <td>
-                            <img><?php echo $dado['arquivo'];?></img>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><?php echo $dado['data'];?></td>
-                        <td><?php echo $dado['nomeEvento'];?></td>
-                        <td>
-                            <img><?php echo $dado['arquivo'];?></img>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><?php echo $dado['data'];?></td>
-                        <td><?php echo $dado['nomeEvento'];?></td>
-                        <td>
-                            <img><?php echo $dado['arquivo'];?></img>
+                            <img src ="public/Assets/upload/<?php echo $dado['arquivo']; ?>" />
                         </td>
                     </tr>
                     <?php }?>
                 </table>
             </div>
         </div>
-        <footer id="my-footer">
+        <footer>
             <h2>Desenvolvedor</h2>
             <a href="https://www.instagram.com/ino_css/?hl=pt-br" target="_blank">
                 <img src="public/Assets/logo/instagram.png"/>

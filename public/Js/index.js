@@ -1,8 +1,6 @@
 //Pagina Inicial
 //Criador Marcelino Rodrigues
 
-var Hoje = new Date();
-
 //Pegar Data Atual
 function formataData(data = new Date()) {
 	var dia = data.getDate();
@@ -14,4 +12,8 @@ function formataData(data = new Date()) {
 
 	return dia+'/'+mes+'/'+ano;
 }
-console.log(formataData());
+
+//Function button
+function clickButton(){
+	console.log("boraaa");
+}
