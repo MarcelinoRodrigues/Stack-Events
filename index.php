@@ -13,6 +13,7 @@
         <link rel='stylesheet' type='text/css' href='public/Styles/Index.css'>
         <link rel="shortcut icon" href="public/Assets/logo/event.png"/>
         <script type="text/javascript" src="public/js/index.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <title>Eventos</title>
     </head>
     <body id="Inicio">
