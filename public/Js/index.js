@@ -1,6 +1,18 @@
 //Pagina Inicial
 //Criador Marcelino Rodrigues
 
+document.getElementById("btnBuscar").onclick = function(){
+	var xmlHttp = new XMLHttpRequest();
+	xmlHttp.onreadystatechange = function(){
+		if(xmlHttp.readyState === 4 && xmlHttp.status === 200){
+			document.getElementById("retorno").innerHTML = xmlHttp.responseText;
+		}
+	};
+	xmlHttp.open("Get","curso.txt",true);
+	xmlHttp.send();
+}
+
+
 //IIFE DATA ATUAL
 (function(data = new Date()){
 	var dia = data.getDate();

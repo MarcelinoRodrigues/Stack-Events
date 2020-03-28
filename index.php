@@ -47,9 +47,9 @@
             <div>
                 <span>Eventos</span>
             </div>
-            <hr />
+            <hr/>
             <div class="container-button">
-                <input onclick="clickButton()" type="submit" value="Hoje" id=""/>
+                <input onclick="clickButton()" type="submit" value="Hoje"/>
                 <input onclick="clickButton()" type="submit" value="Amanhã"/>
                 <input onclick="clickButton()" type="submit" value="Próxima semana"/>
                 <input onclick="clickButton()" type="submit" value="Todos os Eventos"/>
