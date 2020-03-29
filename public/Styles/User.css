@@ -20,12 +20,6 @@ nav ul li{
 nav ul li:hover{
     background-color: #a8a8a8;
 }
-nav ul #event{
-    background-color: #CD5C5C;
-}
-nav ul #event:hover{
-    background-color: #a8a8a8;
-}
 nav ul li a{
     text-decoration: none;
     padding: .6em 1em;

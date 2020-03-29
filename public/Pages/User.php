@@ -42,7 +42,7 @@
     ?>
     <nav>
         <ul>
-            <li><a href="../../index.php">Voltar</a></li>
+            <li id="event"><a href="../../index.php">Voltar</a></li>
         </ul>
     </nav>
     <form action="User.php" method="POST" enctype="multipart/form-data">

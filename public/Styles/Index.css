@@ -146,6 +146,10 @@ footer img:hover{
     cursor: pointer;
     background-color: #a8a8a8;
 }
+#my-event .container-button input:focus{
+    background-color: #CD5C5C;
+    border-radius: 1px;
+}
 #my-event .box{
     background-color: #a8a8a8;
     width: 1075px;
