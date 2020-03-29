@@ -43,7 +43,6 @@
     <nav>
         <ul>
             <li><a href="../../index.php">Voltar</a></li>
-            <li><a href="#my-footer">Contato</a></li>
         </ul>
     </nav>
     <form action="User.php" method="POST" enctype="multipart/form-data">

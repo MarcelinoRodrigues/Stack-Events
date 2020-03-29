@@ -13,7 +13,7 @@ document.getElementById("btnBuscar").onclick = function(){
 }
 
 
-//IIFE DATA ATUAL
+//IFEE DATA ATUAL
 (function(data = new Date()){
 	var dia = data.getDate();
 	var mes = data.getMonth()+1;
