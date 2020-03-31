@@ -1,19 +1,12 @@
-var name      = document.querySelector('#nomeE');
-var data      = document.querySelector('#dataE');
-var descricao = document.querySelector('#descricao');
+//Criação Arquivo Marcelino
 var form      = document.querySelector('#form');
 
-//Using new Ajax with form
-form.addEventListener("submit", function(event){
-    event.preventDefault();
+form.addEventListener("submit",FValidation);
 
-    let dados = {
-        nome: name.value,
-        data: data.value,
-        descricao: descricao.value
-    };
-    fetch('http://localhost/ProjetoStack/public/Pages/User.php',{
-        method: 'POST',
-        body: JSON.stringify(dados)
-    })
-})
+function FValidation(value){
+    value.preventDefault();
+
+    var name      = document.querySelector('#nomeE');
+    var data      = document.querySelector('#dataE');
+    var descricao = document.querySelector('#descricao');
+}

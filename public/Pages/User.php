@@ -33,7 +33,6 @@
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="../Assets/logo/event.png"/>
     <link rel="stylesheet" type="text/css" href="../Styles/User.css"/>
-    <script type="text/javascript" src="../js/User.js"></script>
     <title>ProjetoStack</title>
 </head>
 <body>
@@ -66,5 +65,6 @@
             <img src="../Assets/logo/whatsapp.png"/>
         </a>
     </footer>
+    <script type="text/javascript" src="../js/User.js"></script>
 </body>
 </html>

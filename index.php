@@ -12,7 +12,6 @@
         <meta name="viewport" content="width=device-width">
         <link rel='stylesheet' type='text/css' href='public/Styles/Index.css'>
         <link rel="shortcut icon" href="public/Assets/logo/event.png"/>
-        <script type="text/javascript" src="public/js/index.js"></script>
         <title>Eventos</title>
     </head>
     <body id="Inicio">
@@ -80,5 +79,6 @@
                 <img src="public/Assets/logo/whatsapp.png"/>
             </a>
         </footer>
+        <script type="text/javascript" src="public/js/index.js"></script>
     </body>
 </html>
