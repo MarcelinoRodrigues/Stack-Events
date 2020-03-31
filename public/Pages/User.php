@@ -33,6 +33,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="../Assets/logo/event.png"/>
     <link rel="stylesheet" type="text/css" href="../Styles/User.css"/>
+    <script type="text/javascript" src="../js/User.js"></script>
     <title>ProjetoStack</title>
 </head>
 <body>
@@ -45,12 +46,12 @@
             <li id="event"><a href="../../index.php">Voltar</a></li>
         </ul>
     </nav>
-    <form action="User.php" method="POST" enctype="multipart/form-data">
+    <form action="User.php" id="form" method="POST" enctype="multipart/form-data">
         <h1>Cadastrar Evento</h1>
-        <input type="text" name="nomeE" placeholder="Nome Do Evento" autocomplete="off" required>
-        <input type="date" name="dataE" required>
-        <textarea placeholder="Descrição Do Evento" name="descricao" autocomplete="off"></textarea>
-        Arquivo:<input type="file" name="arquivo" required>
+        <input type="text" name="nomeE" id="nomeE" placeholder="Nome Do Evento" autocomplete="off" required>
+        <input type="date" name="dataE" id="dataE" required>
+        <textarea placeholder="Descrição Do Evento" name="descricao" id="descricao" autocomplete="off"></textarea>
+        Arquivo:<input type="file" name="arquivo" id="arquivo" required>
         <input type="submit" value="Criar"/>
     </form>
     <footer id="my-footer">

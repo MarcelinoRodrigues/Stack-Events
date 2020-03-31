@@ -9,6 +9,7 @@ function clickButton(){
 		}
 	}
 };
+//Conexão Ajax
 //IFEE FUNCTION
 (function(){
 	console.error("IFEE Persistência");
