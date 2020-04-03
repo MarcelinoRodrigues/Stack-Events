@@ -67,7 +67,7 @@
                 </table>
             </div>
         </div>
-        <footer>
+        <footer class="footerIndex">
             <h2>Desenvolvedor</h2>
             <a href="https://www.instagram.com/ino_css/?hl=pt-br" target="_blank">
                 <img src="public/Assets/logo/instagram.png"/>

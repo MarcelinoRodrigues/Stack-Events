@@ -9,7 +9,13 @@ function FValidation(){
     var data      = document.querySelector('#dataE');
     var descricao = document.querySelector('#descricao');
 
-    if(name == ''){alert('Preencha por favor o campo nome.');}
-    if(data  == ''){alert('Preencha por favor o campo data.');}
-    if(descricao == ''){alert('Preencha por favor o campo descrição.')}
+    if(name === ''){
+        alert('Preencha por favor o campo nome.')
+    }
+    if(data  === ''){
+        alert('Preencha por favor o campo data.')
+    }
+    if(descricao === ''){
+        alert('Preencha por favor o campo descrição.')
+    }
 }
