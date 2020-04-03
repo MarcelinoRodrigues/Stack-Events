@@ -3,7 +3,7 @@ var form = document.querySelector('#form');
 
 form.addEventListener("submit",FValidation);
 
-function FValidation(){
+function formularioValidation(){
 
     var name      = document.querySelector('#nomeE');
     var data      = document.querySelector('#dataE');

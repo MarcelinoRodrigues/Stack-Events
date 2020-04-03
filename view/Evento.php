@@ -45,13 +45,13 @@
             <li id="event"><a href="../index.php">Voltar</a></li>
         </ul>
     </nav>
-    <form action="User.php" id="form" method="POST" enctype="multipart/form-data">
+    <form action="Evento.php" id="form" method="POST" enctype="multipart/form-data">
         <h1>Cadastrar Evento</h1>
         <input type="text" name="nomeE" id="nomeE" placeholder="Nome Do Evento" autocomplete="off" required>
         <input type="date" name="dataE" id="dataE" required>
         <textarea placeholder="Descrição Do Evento" name="descricao" id="descricao" autocomplete="off"></textarea>
         Arquivo:<input type="file" name="arquivo" id="arquivo" required>
-        <input type="submit" value="Criar"/>
+        <input type="submit" onclick="formularioValidation()" value="Criar"/>
     </form>
     <footer id="my-footer">
         <h2>Desenvolvedor</h2>
@@ -65,6 +65,6 @@
             <img src="../Assets/logo/whatsapp.png"/>
         </a>
     </footer>
-    <script type="text/javascript" src="../js/User.js"></script>
+    <script type="text/javascript" src="../public/js/Evento.js"></script>
 </body>
 </html>
