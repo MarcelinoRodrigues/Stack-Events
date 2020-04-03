@@ -1,5 +1,5 @@
 <?php
-    include ('../../model/conexao.php');
+    include ('../model/conexao.php');
 
     $msg = "";
 
@@ -14,7 +14,7 @@
         //define o nome do arquivo
         $arquivo_nome = md5(time()).$extensao;
         //define o diretorio destino do arquivo
-        $diretorio = "../Assets/upload/";
+        $diretorio = "../public/Assets/upload/";
 
         //efetua o upload
         move_uploaded_file($_FILES['arquivo']['tmp_name'],$diretorio.$arquivo_nome);
@@ -32,7 +32,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="../Assets/logo/event.png"/>
-    <link rel="stylesheet" type="text/css" href="../Styles/User.css"/>
+    <link rel="stylesheet" type="text/css" href="../public/Styles/User.css"/>
     <title>ProjetoStack</title>
 </head>
 <body>

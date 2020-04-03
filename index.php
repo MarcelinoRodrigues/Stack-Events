@@ -18,7 +18,7 @@
         <nav>
             <ul>
                 <li><a href="#Inicio">Inicio</a></li>
-                <li id="event"><a href="public/Pages/User.php">Criar Evento</a></li>
+                <li id="event"><a href="view/User.php">Criar Evento</a></li>
                 <li><a href="#my-event">Eventos</a></li>
             </ul>
         </nav>
