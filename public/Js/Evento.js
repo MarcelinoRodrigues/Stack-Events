@@ -1,13 +1,10 @@
 //Criação Arquivo Marcelino
-var form = document.querySelector('#form');
-
-form.addEventListener("submit",FValidation);
 
 function formularioValidation(){
 
-    var name      = document.querySelector('#nomeE');
-    var data      = document.querySelector('#dataE');
-    var descricao = document.querySelector('#descricao');
+    var name      = document.getElementById('nomeE');
+    var data      = document.getElementById('dataE');
+    var descricao = document.getElementById('descricao');
 
     if(name === ''){
         alert('Preencha por favor o campo nome.')

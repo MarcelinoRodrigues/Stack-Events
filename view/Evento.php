@@ -47,22 +47,23 @@
     </nav>
     <form action="Evento.php" id="form" method="POST" enctype="multipart/form-data">
         <h1>Cadastrar Evento</h1>
-        <input type="text" name="nomeE" id="nomeE" placeholder="Nome Do Evento" autocomplete="off" required>
-        <input type="date" name="dataE" id="dataE" required>
-        <textarea placeholder="Descrição Do Evento" name="descricao" id="descricao" autocomplete="off"></textarea>
-        Arquivo:<input type="file" name="arquivo" id="arquivo" required>
+        <input type="text" name="nomeE" id="nomeE" placeholder="Nome Do Evento" autocomplete="off" require>
+        <input type="date" name="dataE" id="dataE" require >
+        <textarea placeholder="Descrição Do Evento" name="descricao" id="descricao" autocomplete="off" require>
+        </textarea>
+        Arquivo:<input type="file" name="arquivo" id="arquivo" >
         <input type="submit" onclick="formularioValidation()" value="Criar"/>
     </form>
     <footer id="my-footer">
         <h2>Desenvolvedor</h2>
         <a href="https://www.instagram.com/ino_css/?hl=pt-br" target="_blank">
-            <img src="../Assets/logo/instagram.png"/>
+            <img src="../public/Assets/logo/instagram.png"/>
         </a>
         <a href="https://github.com/MarcelinoRodrigues" target="_blank">
-            <img src="../Assets/logo/git.png"/>
+            <img src="../public/Assets/logo/git.png"/>
         </a>
         <a href="https://whats.link/marcelinorodriguesdonascimento" target="_blank">
-            <img src="../Assets/logo/whatsapp.png"/>
+            <img src="../public/Assets/logo/whatsapp.png"/>
         </a>
     </footer>
     <script type="text/javascript" src="../public/js/Evento.js"></script>
