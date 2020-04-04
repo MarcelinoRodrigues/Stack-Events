@@ -45,7 +45,7 @@ form h1{
 	font-weight: 500;
 	font-style: italic;
 }
-input[type='file'] {
+form input[type='file'] {
     background: linear-gradient(top, #f9f9f9, #e3e3e3);
     border: 1px solid #999;
     border-radius: 3px;

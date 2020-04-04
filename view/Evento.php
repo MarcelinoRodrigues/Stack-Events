@@ -32,7 +32,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="../Assets/logo/event.png"/>
-    <link rel="stylesheet" type="text/css" href="../public/Styles/User.css"/>
+    <link rel="stylesheet" type="text/css" href="../public/Styles/Evento.css"/>
     <title>ProjetoStack</title>
 </head>
 <body>
