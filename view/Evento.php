@@ -52,7 +52,7 @@
         <textarea placeholder="Descrição Do Evento" name="descricao" id="descricao" autocomplete="off" require>
         </textarea>
         Arquivo:<input type="file" name="arquivo" id="arquivo" >
-        <input type="submit" onclick="formularioValidation()" value="Criar"/>
+        <input type="submit" id="send" value="Criar"/>
     </form>
     <footer id="my-footer">
         <h2>Desenvolvedor</h2>
