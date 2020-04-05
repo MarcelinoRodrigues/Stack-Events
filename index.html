@@ -1,11 +1,3 @@
-<?php
-    include ('model/conexao.php');
-
-    $sql ="SELECT data,nomeEvento,arquivo
-        from evento";
-
-    $prod = mysqli_query($conexao,$sql);
-?>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8"/>
@@ -18,7 +10,7 @@
         <nav>
             <ul>
                 <li><a href="#Inicio">Inicio</a></li>
-                <li id="event"><a href="view/Evento.php">Criar Evento</a></li>
+                <li id="event"><a href="view/Evento.html">Criar Evento</a></li>
                 <li><a href="#my-event">Eventos</a></li>
             </ul>
         </nav>
@@ -55,15 +47,13 @@
             </div>
             <div class="box">
                 <table> 
-                    <?php while($dado = $prod->fetch_array()){?> 
                     <tr>
-                        <td><?php echo $dado['data'];?></td>
-                        <td><?php echo $dado['nomeEvento'];?></td>
+                        <td></td>
+                        <td></td>
                         <td>
-                            <img src ="public/Assets/upload/<?php echo $dado['arquivo']; ?>" />
+                            <img src =""/>
                         </td>
                     </tr>
-                    <?php }?>
                 </table>
             </div>
         </div>

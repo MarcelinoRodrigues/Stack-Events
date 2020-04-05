@@ -23,17 +23,11 @@
             descricao
         }
 
-
-        const test = localStorage.test ? JSON.parse(localStorage.test) : [];
-        test.push(Evento);
-
-        localStorage.test = JSON.stringify(test);
-
         //resetando os campos para vazio
         $('nomeE').value = "";
         $('dataE').value = "";
         $('descricao').value = "";
-
-        console.log(test)
+        
+        console.log(Evento.descricao)
     })
 })()
