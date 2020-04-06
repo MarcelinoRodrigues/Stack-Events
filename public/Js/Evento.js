@@ -8,26 +8,32 @@
     $('send').addEventListener("click",evento =>{
         const name = $('nomeE').value;
         const data = $('dataE').value;
-        const descricao = $('descricao');
+        const descricao = $('descricao').value;
+        const arquivo = $('arquivo').value;
 
         //validando o formulário
-        if(!name || !data || !descricao){
+        if(!name || !data || !descricao || !arquivo){
             alert("Preencha Todos os campos")
             return false;
+        }
+        if(name || data || descricao || arquivo){
+            $('h1').innerHTML = "Evento Criado Com Sucesso"
         }
 
         //criação do objeto Evento
         const Evento = {
             name,
             data,
-            descricao
+            descricao,
+            arquivo
         }
 
         //resetando os campos para vazio
-        $('nomeE').value = "";
-        $('dataE').value = "";
+        $('nomeE').value     = "";
+        $('dataE').value     = "";
         $('descricao').value = "";
+        $('arquivo').value   = "";
         
-        console.log(Evento.descricao)
+        console.log(Evento)
     })
 })()

@@ -12,13 +12,33 @@
             <li id="event"><a href="../index.html">Voltar</a></li>
         </ul>
     </nav>
+    <h1 id="h1"></h1>
     <form id="form" method="POST" enctype="multipart/form-data">
-        <h1>Cadastrar Evento</h1>
-        <input type="text" name="nomeE" id="nomeE" placeholder="Nome Do Evento" autocomplete="off" require>
-        <input type="date" name="dataE" id="dataE" require >
-        <textarea placeholder="Descrição Do Evento" name="descricao" id="descricao" autocomplete="off" require>
-        </textarea>
-        Arquivo:<input type="file" name="arquivo" id="arquivo" >
+        <h2>Cadastrar Evento</h2>
+        <input 
+            type="text" 
+            id="nomeE" 
+            placeholder="Nome Do Evento" 
+            autocomplete="off"
+            required/>
+        <input 
+            type="date" 
+            id="dataE"
+            required/>
+        <input 
+            type="text"
+            id="descricao"
+            placeholder="Descrição do Evento"
+            autocomplete="off"
+            required/>
+        <span>
+            <h4>Arquivo</h4>
+            <input 
+                type="file" 
+                name="arquivo" 
+                id="arquivo"
+                required/>
+        </span>
         <input type="submit" id="send" value="Criar"/>
     </form>
     <footer id="my-footer">

@@ -64,6 +64,10 @@ nav ul li a{
     border: solid 1px black;
     margin-top: 50px;
 }
+h1{
+    text-align: center;
+    color: #CD5C5C;
+}
 form{
     width: 400px;
     padding: 40px;
@@ -75,7 +79,7 @@ form{
     margin-bottom: 50px;
     border: 1px solid #a8a8a8;
 }
-form h1{
+form h2{
 	color: #000000;
 	text-transform: uppercase;
 	font-weight: 500;
