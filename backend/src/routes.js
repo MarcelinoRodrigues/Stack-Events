@@ -1,9 +1,8 @@
 const express = require('express');
+const EventoController = require('./controller/EventoController');
 
 const routes = express.Router();
 
-routes.post('/users',(req,res)=>{
-    return res.json(req.body);
-})
+routes.post('/Eventos',EventoController.store);
 
 module.exports = routes;
