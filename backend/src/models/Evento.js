@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
-const EventoSchema = new mongoose.Schema({
+const eventoSchema = new mongoose.Schema({
     nome: String,
     data: Date,
     descricao: String,
     arquivo: String,
-    active: Boolean
+    Active: Boolean,
 })
 
-module.exports = mongoose.model('Evento',UserSchema);
+module.exports = mongoose.model('Evento', eventoSchema);
