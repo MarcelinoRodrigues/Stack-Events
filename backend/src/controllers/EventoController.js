@@ -4,13 +4,15 @@ const Evento = require('../models/Evento');
 module.exports = {
     async store(req,res){
         //aplicando dessestruturação do js
-        const {nome} = req.body;
+        const {nome, data, description} = req.body;
+        const {filename} = req.file;
 
-        let evento = await Evento.findOne({nome})
-        //const evento = await Evento.create({nome})
-        if(!evento){
-            evento = await Evento.create({nome});
-        }
+        const evento = await Evento.create({
+            nome: nome,
+            data: data,
+            description: description,
+            thumbnail: filename
+        })
 
         return res.json(evento);
     }
