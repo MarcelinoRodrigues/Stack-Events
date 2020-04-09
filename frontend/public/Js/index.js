@@ -1,11 +1,22 @@
 //Pagina Inicial
 //Criador Marcelino Rodrigues
+(function(){
+	const $ = query => document.getElementById(query)
 
-//se o botão for clicado
-function clickButton(){
-	document.querySelectorAll('input').onkeydown = function(event){
-		if(event.KeyCode === 13){
-			console.log("kk")
-		}
-	}
-};
+	$('hoje').addEventListener('click', evento =>{
+		const hoje = $('hoje').value;
+		console.log(hoje);
+	})
+	$('amanha').addEventListener('click', evento =>{
+		const amanha = $('amanha').value;
+		console.log(amanha);
+	})
+	$('proximaSemana').addEventListener('click', evento =>{
+		const proximaSemana = $('proximaSemana').value;
+		console.log(proximaSemana);
+	})
+	$('all').addEventListener('click', evento =>{
+		const all = $('all').value;
+		console.log(all);
+	})
+})();
