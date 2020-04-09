@@ -16,7 +16,7 @@
             alert("Preencha Todos os campos")
             return false;
         }
-        if(name || data || descricao || arquivo){
+        else{
             $('h1').innerHTML = "Evento Criado Com Sucesso"
         }
 
