@@ -1,6 +1,7 @@
 //Pagina Inicial
 //Criador Marcelino Rodrigues
 (function(){
+	
 	const $ = query => document.getElementById(query)
 
 	$('hoje').addEventListener('click', evento =>{
