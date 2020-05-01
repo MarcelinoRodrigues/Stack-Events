@@ -1,8 +1,6 @@
 <?php
     include ('../model/conexao.php');
 
-    $msg = "";
-
     //se houver arquivo
     if(isset($_FILES['arquivo'])){
         $nomeE     = $_POST['nomeE'];
@@ -19,12 +17,9 @@
         //efetua o upload
         move_uploaded_file($_FILES['arquivo']['tmp_name'],$diretorio.$arquivo_nome);
 
-        $sql_code = "INSERT INTO evento (nomeEvento,data,descricao,arquivo) VALUES('".$nomeE."','".$dataE."','".$descricao."','".$arquivo_nome."')";
+        $sql_code = "INSERT INTO evento (nomeEvento,dataEvento,descricao,arquivo) VALUES('".$nomeE."','".$dataE."','".$descricao."','".$arquivo_nome."')";
 
-        if(mysqli_query($conexao,$sql_code))
-            $msg = "Arquivo enviado com sucesso!";
-        else
-            $msg = "Falha ao enviar arquivo";
+        mysqli_query($conexao,$sql_code);
     }
 ?>
 <html lang="pt-br">
@@ -36,10 +31,6 @@
     <title>ProjetoStack</title>
 </head>
 <body>
-    <?php
-        if ($msg != false)
-            echo "<p> $msg <p>";
-    ?>
     <nav>
         <ul>
             <li id="event"><a href="../index.php">Voltar</a></li>

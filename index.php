@@ -1,7 +1,7 @@
 <?php
     include ('model/conexao.php');
 
-    $sql ="SELECT data,nomeEvento,arquivo
+    $sql ="SELECT dataEvento,nomeEvento,arquivo
         from evento";
 
     $prod = mysqli_query($conexao,$sql);
@@ -58,7 +58,7 @@
                 <table> 
                     <?php while($dado = $prod->fetch_array()){?> 
                     <tr>
-                        <td><?php echo $dado['data'];?></td>
+                        <td><?php echo $dado['dataEvento'];?></td>
                         <td><?php echo $dado['nomeEvento'];?></td>
                         <td>
                             <img src ="public/Assets/upload/<?php echo $dado['arquivo']; ?>" />
