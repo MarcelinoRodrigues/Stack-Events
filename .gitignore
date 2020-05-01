@@ -1,6 +1,0 @@
-# dependencies
-/backend/node_modules
-
-npm-debug.log*
-
-.vscode

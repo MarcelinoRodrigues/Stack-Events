@@ -1,3 +1,12 @@
+<?php
+    include ('model/conexao.php');
+
+    $sql ="SELECT data,nomeEvento,arquivo
+        from evento";
+
+    $prod = mysqli_query($conexao,$sql);
+?>
+
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8"/>
@@ -10,7 +19,7 @@
         <nav>
             <ul>
                 <li><a href="#Inicio">Inicio</a></li>
-                <li id="event"><a href="view/Evento.html">Criar Evento</a></li>
+                <li id="event"><a href="view/Evento.php">Criar Evento</a></li>
                 <li><a href="#my-event">Eventos</a></li>
             </ul>
         </nav>
@@ -40,24 +49,26 @@
             </div>
             <hr/>
             <div class="container-button">
-                <input id="hoje" type="submit" value="Hoje"/>
-                <input id="amanha" type="submit" value="Amanhã"/>
-                <input id="proximaSemana" type="submit" value="Próxima semana"/>
-                <input id="all" type="submit" value="Todos os Eventos"/>
+                <input onclick="clickButton()" type="submit" value="Hoje"/>
+                <input onclick="clickButton()" type="submit" value="Amanhã"/>
+                <input onclick="clickButton()" type="submit" value="Próxima semana"/>
+                <input onclick="clickButton()" type="submit" value="Todos os Eventos"/>
             </div>
-            <div id="box" class="box">
+            <div class="box">
                 <table> 
+                    <?php while($dado = $prod->fetch_array()){?> 
                     <tr>
-                        <td></td>
-                        <td></td>
+                        <td><?php echo $dado['data'];?></td>
+                        <td><?php echo $dado['nomeEvento'];?></td>
                         <td>
-                            <img src =""/>
+                            <img src ="public/Assets/upload/<?php echo $dado['arquivo']; ?>" />
                         </td>
                     </tr>
+                    <?php }?>
                 </table>
             </div>
         </div>
-        <footer>
+        <footer class="footerIndex">
             <h2>Desenvolvedor</h2>
             <a href="https://www.instagram.com/ino_css/?hl=pt-br" target="_blank">
                 <img src="public/Assets/logo/instagram.png"/>
