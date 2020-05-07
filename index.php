@@ -4,7 +4,7 @@
  * 
  * 
  * 
- * 22/04/2020 - Marcelino Rodrigues - Criação do arquivo
+ * 07/05/2020 - Marcelino Rodrigues - Criação do arquivo
  ***************************************************************/
 <?php
     include ('model/conexao.php');
