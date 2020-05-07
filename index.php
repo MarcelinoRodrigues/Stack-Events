@@ -1,3 +1,11 @@
+/***************************************************************
+ * 
+ * Todos os direitos reservados. É proibida a reprodução ou transmissão total ou parcial deste material, por quaisquer meios.
+ * 
+ * 
+ * 
+ * 22/04/2020 - Marcelino Rodrigues - Criação do arquivo
+ ***************************************************************/
 <?php
     include ('model/conexao.php');
 
