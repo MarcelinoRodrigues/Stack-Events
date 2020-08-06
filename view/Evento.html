@@ -1,27 +1,3 @@
-<?php
-    include ('../model/conexao.php');
-
-    //se houver arquivo
-    if(isset($_FILES['arquivo'])){
-        $nomeE     = $_POST['nomeE'];
-        $dataE     = $_POST['dataE'];
-        $descricao = $_POST['descricao'];
-
-        //pegando extensao do arquivo
-        $extensao = strtolower(substr($_FILES['arquivo']['name'], -4));
-        //define o nome do arquivo
-        $arquivo_nome = md5(time()).$extensao;
-        //define o diretorio destino do arquivo
-        $diretorio = "../public/Assets/upload/";
-
-        //efetua o upload
-        move_uploaded_file($_FILES['arquivo']['tmp_name'],$diretorio.$arquivo_nome);
-
-        $sql_code = "INSERT INTO evento (nomeEvento,dataEvento,descricao,arquivo) VALUES('".$nomeE."','".$dataE."','".$descricao."','".$arquivo_nome."')";
-
-        mysqli_query($conexao,$sql_code);
-    }
-?>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -33,7 +9,7 @@
 <body>
     <nav>
         <ul>
-            <li id="event"><a href="../index.php">Voltar</a></li>
+            <li id="event"><a href="../index.html">Voltar</a></li>
         </ul>
     </nav>
     <form action="Evento.php" id="form" method="POST" enctype="multipart/form-data">
