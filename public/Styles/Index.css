@@ -155,11 +155,19 @@ article{
     border-radius: 2px;
     overflow: auto;
 }
-#my-event .box td{
-    padding: 1em;
+#table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 100%;
 }
-#my-event .box td img{
-    margin-left: 100px;
-    height: 100px;
-    width: 130px;
+#table td, #table th {
+    background: #ffffff;
+    padding: 8px;
+    text-align: center;
+}
+#table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+#table td:hover{
+    background-color: #CD5C5C;
 }

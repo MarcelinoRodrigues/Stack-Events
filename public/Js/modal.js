@@ -1,13 +1,11 @@
 const $ = query => document.getElementById(query)
-const js = query => document.createElement(query)
 
-$('fechar').addEventListener('click',()=>{
-    $('form').style.display = 'none'
-})
-
-$('event').addEventListener('click',()=>{
-    $('form').style.display = 'block'
-})
+function FecharModal(){
+    $('abrirModal').style.display = 'none'
+}
+function AbrirModal(){
+    $('abrirModal').style.display = 'block'
+}
 
 //usando evento de clique do formulario
 $('send').addEventListener("click", () => {
@@ -15,18 +13,30 @@ $('send').addEventListener("click", () => {
     const data = $('dataE').value
     const descricao = $('descricao').value
 
-    if (!name || !data || !descricao) {
-        alert("Preencha Todos os campos")
-        return false;
-    }
+    if (name || data || descricao){
+        event.preventDefault()
 
-    //criação do objeto Evento
-    const Evento = {
-        name,
-        data,
-        descricao
+        let tr = document.createElement('tr')
+        let tdNome = document.createElement('td')
+        let tdData = document.createElement('td')
+        let tdDescricao = document.createElement('td')
+
+        tdNome.append(name)
+        tdData.append(data)
+        tdDescricao.append(descricao)
+
+        tr.appendChild(tdNome)
+        tr.appendChild(tdData)
+        tr.appendChild(tdDescricao)
+
+        $('table').append(tr)
+
+        FecharModal()
+        
+    }else{
+        alert("preencha todos os campos")
+        return false
     }
-    
     //resetando os campos para vazio
     $('nomeE').value = "";
     $('dataE').value = "";
