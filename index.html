@@ -3,6 +3,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width">
         <link rel='stylesheet' type='text/css' href='public/Styles/Index.css'>
+        <link rel='stylesheet' type='text/css' href='public/Styles/Modal.css'>
         <link rel="shortcut icon" href="public/Assets/logo/event.png"/>
         <title>Eventos</title>
     </head>
@@ -10,7 +11,7 @@
         <nav>
             <ul>
                 <li><a href="#Inicio">Inicio</a></li>
-                <li id="event"><a href="view/Evento.html">Criar Evento</a></li>
+                <li id="event"><a href="#abrirModal">Criar Evento</a></li>
                 <li><a href="#my-event">Eventos</a></li>
             </ul>
         </nav>
@@ -63,6 +64,18 @@
                 <img src="public/Assets/logo/whatsapp.png"/>
             </a>
         </footer>
+        <div id="abrirModal" class="modal">
+            <form action="" id="form" method="POST" enctype="multipart/form-data">
+                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <h1>Cadastrar Evento</h1>
+                <input type="text" name="nomeE" id="nomeE" placeholder="Nome Do Evento" autocomplete="off" require>
+                <input type="date" name="dataE" id="dataE" require>
+                <textarea placeholder="Descrição Do Evento" name="descricao" id="descricao" autocomplete="off" require>
+                    </textarea>
+                <input type="file" name="arquivo" id="arquivo">
+                <input type="submit" id="send" value="Criar" />
+            </form>
+        </div>
         <script type="text/javascript" src="public/js/index.js"></script>
     </body>
 </html>
