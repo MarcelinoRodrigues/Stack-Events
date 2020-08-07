@@ -13,7 +13,9 @@ $('send').addEventListener("click", () => {
     const data = $('dataE').value
     const descricao = $('descricao').value
 
-    if (name || data || descricao){
+    if (!name || !data || !descricao){
+        alert("preencha todos os campos")
+    }else{
         event.preventDefault()
 
         let tr = document.createElement('tr')
@@ -29,13 +31,8 @@ $('send').addEventListener("click", () => {
         tr.appendChild(tdData)
         tr.appendChild(tdDescricao)
 
-        $('table').append(tr)
-
         FecharModal()
-        
-    }else{
-        alert("preencha todos os campos")
-        return false
+        $('table').append(tr)
     }
     //resetando os campos para vazio
     $('nomeE').value = "";
