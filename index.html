@@ -11,7 +11,7 @@
         <nav>
             <ul>
                 <li><a href="#Inicio">Inicio</a></li>
-                <li id="event"><a href="#abrirModal">Criar Evento</a></li>
+                <li id="event"><a href="#">Criar Evento</a></li>
                 <li><a href="#my-event">Eventos</a></li>
             </ul>
         </nav>
@@ -66,7 +66,7 @@
         </footer>
         <div id="abrirModal" class="modal">
             <form action="" id="form" method="POST" enctype="multipart/form-data">
-                <a href="#fechar" title="Fechar" class="fechar">x</a>
+                <a href="#fechar" title="Fechar" id="fechar">x</a>
                 <h1>Cadastrar Evento</h1>
                 <input type="text" name="nomeE" id="nomeE" placeholder="Nome Do Evento" autocomplete="off" require>
                 <input type="date" name="dataE" id="dataE" require>
@@ -77,5 +77,6 @@
             </form>
         </div>
         <script type="text/javascript" src="public/js/index.js"></script>
+        <script type="text/javascript" src="public/js/modal.js"></script>
     </body>
 </html>

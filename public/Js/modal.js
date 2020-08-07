@@ -1,6 +1,14 @@
 const $ = query => document.getElementById(query)
 const js = query => document.createElement(query)
 
+$('fechar').addEventListener('click',()=>{
+    $('form').style.display = 'none'
+})
+
+$('event').addEventListener('click',()=>{
+    $('form').style.display = 'block'
+})
+
 //usando evento de clique do formulario
 $('send').addEventListener("click", () => {
     const name = $('nomeE').value

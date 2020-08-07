@@ -17,6 +17,7 @@ nav ul li{
     list-style-type: none;
     padding: 1.5em;
     display: inline-block;
+    cursor: pointer;
 }
 nav ul li:hover{
     background-color: #a8a8a8;
