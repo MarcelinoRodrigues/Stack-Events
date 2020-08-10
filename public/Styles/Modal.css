@@ -15,7 +15,7 @@ form{
     background-color: #ffffff;
     text-align: center;
     border-radius: 3px;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 150px;
     border: 1px solid #a8a8a8;
     position: fixed;
@@ -24,12 +24,14 @@ form{
     bottom: 0;
     left: 0;
     z-index: 10;
+    border-radius: 50%;
 }
 form h1{
 	color: #000000;
 	text-transform: uppercase;
 	font-weight: 500;
-	font-style: italic;
+    font-style: italic;
+    font-size: 20px;
 }
 form input[type='file'] {
     background: linear-gradient(top, #f9f9f9, #e3e3e3);
@@ -78,10 +80,7 @@ form a{
     right: 0;
     padding: 0px 10px;
     font-size: 50px;
-    color: black;
-    background-color: #CD5C5C;
+    color: #000000;
+    background-color: #ffffff;
     border-radius: 3px;
-}
-form a:hover{
-	color: #ffffff;
 }

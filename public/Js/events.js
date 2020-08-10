@@ -1,5 +1,19 @@
 $('hoje').addEventListener('click',()=>{
-    let data = document.querySelectorAll('.data').value
+    let today=new Date()
+    let day = today.getDay()
+    let month = today.getMonth()
+    let year = today.getFullYear()
 
-    console.log(data)
+    let hoje = () => {
+        day,month,year
+    }
+   data = document.querySelectorAll('.data')
+   if(data.value === new Date()){
+       console.log("deu")
+   }else{
+       console.log("n deu")
+   }
 })
+$('amanha').addEventListener('click',()=>{})
+$('proximaSemana').addEventListener('click',()=>{})
+$('todosOsEventos').addEventListener('click',()=>{})
