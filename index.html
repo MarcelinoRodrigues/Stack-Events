@@ -1,9 +1,11 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet' type='text/css' href='public/Styles/Index.css'>
         <link rel='stylesheet' type='text/css' href='public/Styles/Modal.css'>
+        <link rel="stylesheet" type="text/css" href="public/Styles/responsive.css">
         <link rel="shortcut icon" href="public/Assets/logo/event.png"/>
         <title>Eventos</title>
     </head>
@@ -41,10 +43,10 @@
             </div>
             <hr/>
             <div class="container-button">
-                <input onclick="clickButton()" type="submit" value="Hoje"/>
-                <input onclick="clickButton()" type="submit" value="Amanhã"/>
-                <input onclick="clickButton()" type="submit" value="Próxima semana"/>
-                <input onclick="clickButton()" type="submit" value="Todos os Eventos"/>
+                <input onclick="" type="submit" id="hoje" value="Hoje"/>
+                <input onclick="" type="submit" id="amanha" value="Amanhã"/>
+                <input onclick="" type="submit" id="proximaSemana" value="Próxima semana"/>
+                <input onclick="" type="submit" id="todosOsEventos" value="Todos os Eventos"/>
             </div>
             <div class="box">
                 <table id="table">
@@ -82,5 +84,6 @@
         </div>
         <script type="text/javascript" src="public/js/index.js"></script>
         <script type="text/javascript" src="public/js/modal.js"></script>
+        <script type="text/javascript" src="public/Js/events.js"></script>
     </body>
 </html>

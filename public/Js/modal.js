@@ -1,5 +1,3 @@
-const $ = query => document.getElementById(query)
-
 function FecharModal(){
     $('abrirModal').style.display = 'none'
 }
@@ -22,6 +20,8 @@ $('send').addEventListener("click", () => {
         let tdNome = document.createElement('td')
         let tdData = document.createElement('td')
         let tdDescricao = document.createElement('td')
+
+        tdData.setAttribute('class','data')
 
         tdNome.append(name)
         tdData.append(data)
