@@ -1,7 +1,13 @@
-let http = require('http')
+const express = require("express")
+const app = express()
+let path = require("path")
 
-http.createServer(function (req,res){
-    res.end("ola")
-}).listen(9000)
+app.get("/",(req,res)=>{
+    res.sendFile(path.resolve(__dirname + "/../index.html"))
+})
 
-console.log("servidor criado")
+app.get("/send",(req,res)=>{
+    res.send("Evento Criado Com sucesso!")
+})
+
+app.listen(9090)
