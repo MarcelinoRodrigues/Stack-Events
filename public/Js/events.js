@@ -8,7 +8,7 @@ $('hoje').addEventListener('click',()=>{
         day,month,year
     }
    data = document.querySelectorAll('.data')
-   if(data.value === new Date()){
+   if(data.lenght === new Date()){
        console.log("deu")
    }else{
        console.log("n deu")
