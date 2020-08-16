@@ -1,13 +1,7 @@
 const express = require("express")
+const routes = require('./routes')
 const app = express()
-let path = require("path")
 
-app.get("/",(req,res)=>{
-    res.sendFile(path.resolve(__dirname + "/../index.html"))
-})
-
-app.get("/send",(req,res)=>{
-    res.send("Evento Criado Com sucesso!")
-})
+app.use(routes);
 
 app.listen(9090)
