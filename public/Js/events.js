@@ -14,6 +14,12 @@ $('hoje').addEventListener('click',()=>{
        console.log("n deu")
    }
 })
-$('amanha').addEventListener('click',()=>{})
-$('proximaSemana').addEventListener('click',()=>{})
-$('todosOsEventos').addEventListener('click',()=>{})
+$('amanha').addEventListener('click',()=>{
+    return null
+})
+$('proximaSemana').addEventListener('click',()=>{
+    return null
+})
+$('todosOsEventos').addEventListener('click',()=>{
+    return null
+})
