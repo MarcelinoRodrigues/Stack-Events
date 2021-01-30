@@ -14,7 +14,7 @@ $('send').addEventListener("click", () => {
     if (!name || !data || !descricao){
         alert("preencha todos os campos")
     }else{
-        event.preventDefault()
+        //event.preventDefault()
 
         let tr = document.createElement('tr')
         let tdNome = document.createElement('td')
