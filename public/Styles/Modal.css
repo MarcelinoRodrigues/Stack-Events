@@ -72,7 +72,6 @@ form input[type="submit"]{
 form input[type="submit"]:hover{
 	background: #a8a8a8;
 }
-/*my configs*/
 form a{
     text-decoration: none;
     position: absolute;
@@ -83,4 +82,7 @@ form a{
     color: #000000;
     background-color: #ffffff;
     border-radius: 3px;
+}
+form a:hover{
+    background-color: #CD5C5C;
 }
